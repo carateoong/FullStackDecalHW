@@ -1,0 +1,234 @@
+
+
+.navbar {
+    margin-left: 0 auto;
+    padding: 0 auto;
+    background-color: #9688e4;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #9688e4;
+    width: 80%;
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    transition: 1s;
+
+}
+.nav-button {
+    background-color: #9688e4;
+    padding-left: clamp(0px, 3.5%, 80px);
+    padding-right: clamp(0px, 3.5%, 80px);
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.nav-button:hover {
+    background-color: #7063be;
+    cursor: pointer;
+}
+
+.gamja-flower-regular {
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* For the aesthetics */
+.nav-button { 
+    font-size: x-large;
+}
+
+body {
+    background-color: #d8e9fd;
+    margin: 0;
+}
+
+.logo {
+    position: relative;
+    height: 90%;
+    max-height: 450px;
+} 
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.model {
+    position: relative;
+    max-height: 500px;
+    transition: transform 1s ease, left 1s ease; /* Smooth transition for position and transform */
+} 
+
+.line-separator {
+    width: 80%;
+    min-width: 470px;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #23137f;
+    background-color: #23137f;
+    align-items: center;
+    position: relative;
+
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-me-background {
+    margin-top: 0;
+    margin-bottom: 0px;
+    opacity: 90%;
+    width: 100%;
+    height: auto;
+    min-height: 910px;
+    object-fit: cover;
+}
+.about-me-title {
+    position: absolute;
+    left: 1000px;
+
+}
+
+.about-me-text-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 910px;
+    flex-wrap: wrap;
+    gap: 5%;
+
+}
+
+.about-me-textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(300px, 30%, 450px);
+    height: 50%;
+    flex-shrink: 0;
+    background-color: rgb(255, 255, 239);
+    opacity: 70%;
+    border-radius: 30px;
+}
+
+.about-me-title-text {
+    font-family: "Gamja Flower", sans-serif;
+    align-self: center;
+}
+
+.about-me-description {
+    font-family: "Dongle";
+    font-size: 2.0vmax;
+    line-height: 90%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    padding: 2%;
+    flex-shrink: 1;
+}
+
+/* Carousel CSS Starts */
+.carousel-wrapper {
+	display: grid;
+	grid-template-rows: 1fr max-content;
+	grid-gap: 0.4em;
+	position: relative;
+	line-height: 1;
+}
+
+.carousel {
+	position: relative;
+	overflow-x: clip;
+}
+
+.carousel-item {
+	position: absolute;
+	padding: 2rem;
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.1);
+	top: 0;
+	transition: all ease-in-out 800ms;
+	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
+}
+
+.carousel-item-active {
+	background-color: #fff;
+	top: -1rem;
+}
+
+.carousel-nav {
+	width: max-content;
+	margin: 0 auto;
+}
+
+.carousel-nav-item {
+	display: inline-block;
+	padding: 0.4em;
+	box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+	margin: 0 0.2em;
+	border-radius: 8px;
+	transition: all ease-in-out 300ms;
+}
+
+.carousel-nav-item:hover {
+	background-color: #fff;
+}
+
+.latest-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2828de;
+    margin: 0px auto;
+    padding: 0px auto;
+    background-color: #9688e4;
+    max-width: 1920px;
+
+}
+
+.video-title {
+    font-size: xxx-large;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        transition: ease-out 0.75s;
+        transform: translateX(40%);
+        opacity: 0.25;
+    } 
+    .model {
+        transform: translateX(-65%) translateY(0); /* Horizontally center the model smoothly */
+    } 
+
+}
+
+@media screen and (min-width: 1000px) {
+    .logo {
+        transition: ease 1s;
+        transform: translateX(0%);
+    } 
+
+
+
+}

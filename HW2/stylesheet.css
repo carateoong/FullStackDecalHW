@@ -35,11 +35,13 @@ h2 {
   width: 500px;
   border-style: solid;
   margin-bottom: 5rem;
+
 }
 
 .horiz {
   display: flex;
   flex-direction: row;
+  
 }
 
 .twovert {
@@ -52,10 +54,18 @@ h2 {
 
 .threehoriz {
   width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skinny {
   height: 17.5%;
+}
+
+.superskinny {
+  display: flex;
+  flex: 1 1;
 }
 
 .fat {
@@ -70,6 +80,17 @@ h2 {
   left: 85px;
   top: 50px;
 }
+
+.image {
+  position: relative;
+  max-width: 90%;
+}
+
+.stripes {
+  display: flex;
+  flex: 1 1;
+}
+
 
 /* Colors/ Feel free to add your own! */
 
